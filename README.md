@@ -32,6 +32,8 @@ Clean up when you're done:
 
 ```
 terraform destroy
+```
+
 
 ## Future Tasks
 
@@ -41,4 +43,4 @@ terraform destroy
 4. Make the blog post from the task (blog post about Linux namespaces) appear instead of "hello-world" post on startup.
 5. Finish task about OPTIMIZE-ing all of the db tables.
 6. Find and implement better networking solutions and practices - separate vpc, public and private subnets, etc. 
-7. Automate the flow using GitHub Actions
+7. Automate the flow using GitHub Actions.
