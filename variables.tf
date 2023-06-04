@@ -28,12 +28,6 @@ variable "alb_security_group_name" {
   default     = "terraform-example-alb"
 }
 
-variable "database_name" {
-  description = "database_name"
-  type        = string
-  sensitive   = true
-}
-
 variable "database_user" {
   description = "database_user"
   type        = string
