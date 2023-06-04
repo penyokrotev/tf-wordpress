@@ -20,7 +20,7 @@ resource "aws_db_instance" "wordpressdb" {
   engine               = "mysql"
   engine_version       = "5.7"
   instance_class       = "db.t2.micro"
-  db_name              = wordpress
+  db_name              = "wordpress"
   username             = var.database_user
   password             = var.database_password
   skip_final_snapshot  = true
@@ -32,7 +32,7 @@ data "template_file" "user_data" {
   vars = {
     db_username      = var.database_user
     db_user_password = var.database_password
-    db_name          = wordpress
+    db_name          = "wordpress"
     db_RDS           = aws_db_instance.wordpressdb.endpoint
   }
 }
